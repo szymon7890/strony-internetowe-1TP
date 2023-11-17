@@ -1,0 +1,43 @@
+body {
+	background: rgb(0,204,0);
+	background: linear-gradient(180deg, rgba(0,204,0,1) 0%, rgba(34,34,34,1) 75%); 
+	height: 800px;
+	color: #FFFFFF;
+}
+
+h1 {
+	width: 60%;
+	font-size: 48px;
+	text-align: center;
+}
+
+ul {
+	width: 20%;
+	height: 600px;
+	list-style-type: none;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	font-size: 24px;
+	color: #C0C0C0;
+}
+
+#container {
+	width: 50%;
+	height: 600px;
+	margin-left: 20%;
+}
+
+img {
+	width: 75px;
+	height: 75px;
+	float: left;
+	margin-left: 50px;
+}
+
+footer {
+	border-top: 2px solid #808080;
+	color: #c0c0c0;
+}

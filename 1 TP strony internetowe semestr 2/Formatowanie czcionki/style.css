@@ -1,0 +1,17 @@
+/* Ustawienie tła strony na kolor biały i wybór czcionki Big Shoulders Display. */
+body {
+	background-color: #ffffff;
+	font-family: 'Big Shoulders Display', cursive;
+}
+
+/* Stylizacja elementu o identyfikatorze "text". */
+#text {
+	margin: 5%; /* Ustawia margines wewnętrzny na 5% szerokości kontenera. */
+	text-align: justify; /* Tekst jest justowany, co oznacza, że jest wyrównany zarówno z lewej, jak i prawej strony. */
+	line-height: 30px; /* Ustala interlinię (odstęp między wierszami) na 30 pikseli. */
+}
+
+/* Stylizacja nagłówka pierwszego poziomego poziomego poziomu (tytułu strony). */
+h1 {
+	text-align: center; /* Wyrównuje tekst tytułu na środku poziomo. */
+}

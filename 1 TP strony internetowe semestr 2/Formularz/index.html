@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>formularz</title> <!-- Tytuł strony -->
+    	<link rel="stylesheet" href="style.css" type="text/css" /> <!-- Import arkusza stylów CSS -->
+	</head>
+	<body>
+		<h1>HTML Form</h1> <!-- Nagłówek strony -->
+
+		<img id="logo" src="Zrzut ekranu 2021-03-23 140205.PNG"> <!-- Wyświetlenie loga na stronie -->
+
+		<div id="container">
+			<form action="formularzHTML.php" method="POST" id="form"> <!-- Rozpoczęcie formularza -->
+				<!-- Pole "First name" z etykietą -->
+				<label class="informationForm">First name:</label>
+				<input type="text" name="name" id="input1"><br>
+
+				<!-- Pole "Last Name" z etykietą -->
+				<label class="informationForm">Last Name:</label>
+				<input type="text" name="lastname" id="input2"><br>
+
+				<!-- Pole "Date of Birth" z etykietą -->
+				<label class="informationForm">Date of Birth:</label>
+				<input type="date" name="birthdate" id="input3"><br>
+
+				<!-- Pole "Email id" z etykietą -->
+				<label class="informationForm">Email id:</label>
+				<input type="text" name="email" id="input4"><br>
+
+				<!-- Pole "Mobile Number" z etykietą -->
+				<label class="informationForm">Mobile Number:</label>
+				<input type="text" name="numberphone" id="input5"><br>
+
+				<input type="submit" value="submit" id="submit"> <!-- Przycisk "Submit" -->
+				<input type="reset" value="reset" id="reset"> <!-- Przycisk "Reset" -->
+			</form>
+		</div>
+	</body>
+</html>

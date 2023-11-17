@@ -1,0 +1,31 @@
+body {
+	margin: 0px;
+	background-color: #00FFFF;
+}
+
+.klasa1{
+	float:left;
+}
+
+.top1 {
+	font-size: 13px;
+}
+
+#wodor {
+	margin-top: 20px;
+	margin-bottom: 100px;
+	margin-right: 10px;
+	margin-left: 25px;
+	border: 4px; solid: white;
+	border-radius: 14px;
+	padding: 8px 14px;
+}
+
+#img1 {
+	width: 125px;
+	height: 100px;
+	margin-top: -500px;
+	margin-bottom: 280px;
+	margin-right: 0px;
+	margin-left: 350px;
+}

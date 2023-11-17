@@ -1,0 +1,33 @@
+/* Styl kontenera planszy Tetris */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto; /* Dzieli kontener na 10 kolumn */
+  background-color: #2196F3; /* Ustawia kolor tła na niebieski */
+  padding: 10px; /* Dodaje wewnętrzny margines 10 pikseli */
+}
+
+/* Styl elementów planszy Tetris */
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8); /* Ustala kolor tła z lekkim przeźroczem */
+  border: 1px solid rgba(0, 0, 0, 0.8); /* Dodaje cienką czarną obramówkę z lekkim przeźroczem */
+  padding: 30px; /* Dodaje wewnętrzny margines 30 pikseli */
+  font-size: 30px; /* Ustala rozmiar czcionki na 30 pikseli */
+  text-align: center; /* Wyśrodkowuje tekst wewnątrz elementów */
+}
+
+/* Klasy kolorów dla elementów planszy Tetris */
+.green {
+  background-color: green; /* Ustala kolor tła na zielony */
+}
+
+.red {
+  background-color: red; /* Ustala kolor tła na czerwony */
+}
+
+.black {
+  background-color: black; /* Ustala kolor tła na czarny */
+}
+
+.blue {
+  background-color: blue; /* Ustala kolor tła na niebieski */
+}

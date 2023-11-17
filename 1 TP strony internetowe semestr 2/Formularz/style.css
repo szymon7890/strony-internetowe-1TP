@@ -1,0 +1,84 @@
+body {
+	background-color: #00FFFF; /* Ustawienie koloru tła strony na odcień niebieskiego. */
+}
+
+#logo {
+	width: 10%; /* Ustala szerokość elementu o id "logo" na 10% szerokości kontenera. */
+	height: 10%; /* Ustala wysokość elementu o id "logo" na 10% wysokości kontenera. */
+	margin-left: 25%; /* Tworzy odstęp od lewej krawędzi strony o szerokości 25%. */
+	float: right; /* Ustala przesunięcie elementu na prawą stronę kontenera. */
+	margin-left: auto; /* Resetuje lewy margines do automatycznej wartości. */
+	margin-right: auto; /* Resetuje prawy margines do automatycznej wartości. */
+	padding-right: 62%; /* Dodaje wewnętrzny odstęp z prawej strony o szerokości 62%. */
+}
+
+#container {
+	margin-bottom: 10%; /* Dodaje odstęp z dolnej strony kontenera o wielkości 10%. */
+}
+
+.form-group {
+	display: flex; /* Ustawienie kontenera na model wykładany. */
+	flex-direction: row; /* Ustawienie kierunku elementów na poziomy (od lewej do prawej). */
+	align-items: center; /* Wyśrodkowanie elementów w pionie w kontenerze. */
+	margin-bottom: 1%; /* Dodaje odstęp z dolnej strony elementów klasy "form-group" o wielkości 1%. */
+}
+
+#input1 {
+	margin-left: 7%; /* Dodaje odstęp z lewej strony elementu o id "input1" o szerokości 7%. */
+	border-radius: 18%; /* Zaokrągla rogi elementu na 18%. */
+	box-shadow: none; /* Wyłącza efekt cienia dla elementu. */
+}
+
+#input2 {
+	margin-left: 6.8%; /* Dodaje odstęp z lewej strony elementu o id "input2" o szerokości 6.8%. */
+	border-radius: 18%; /* Zaokrągla rogi elementu na 18%. */
+	box-shadow: none; /* Wyłącza efekt cienia dla elementu. */
+}
+
+#input3 {
+	margin-left: 6%; /* Dodaje odstęp z lewej strony elementu o id "input3" o szerokości 6%. */
+	border-radius: 18%; /* Zaokrągla rogi elementu na 18%. */
+	width: 9.3%; /* Ustala szerokość elementu na 9.3%. */
+	box-shadow: none; /* Wyłącza efekt cienia dla elementu. */
+}
+
+#input4 {
+	margin-left: 7.8%; /* Dodaje odstęp z lewej strony elementu o id "input4" o szerokości 7.8%. */
+	border-radius: 18%; /* Zaokrągla rogi elementu na 18%. */
+	box-shadow: none; /* Wyłącza efekt cienia dla elementu. */
+}
+
+#input5 {
+	margin-left: 5%; /* Dodaje odstęp z lewej strony elementu o id "input5" o szerokości 5%. */
+	border-radius: 18%; /* Zaokrągla rogi elementu na 18%. */
+	box-shadow: none; /* Wyłącza efekt cienia dla elementu. */
+}
+
+label {
+	flex: 1; /* Przydziela elastyczny udział w przestrzeni dla elementów typu "label" wewnątrz kontenera. */
+	text-align: left; /* Ustala tekst w etykietach na lewo. */
+}
+
+input {
+	margin-left: 10%; /* Dodaje odstęp z lewej strony elementów typu "input" o szerokości 10%. */
+	margin: 0 0 1%; /* Ustala zewnętrzny odstęp górny i dolny na 0 oraz wewnętrzny odstęp dolny na 1%. */
+}
+
+#submit {
+	width: 6%; /* Ustala szerokość przycisku o id "submit" na 6%. */
+	height: 10%; /* Ustala wysokość przycisku na 10%. */
+	padding: 0.5%; /* Dodaje wewnętrzny odstęp do treści przycisku o szerokości 0.5%. */
+	font-size: 18px; /* Ustala rozmiar czcionki na 18 pikseli. */
+	border-radius: 10%; /* Zaokrągla rogi przycisku na 10%. */
+	box-shadow: none; /* Wyłącza efekt cienia dla przycisku. */
+}
+
+#reset {
+	width: 6%; /* Ustala szerokość przycisku o id "reset" na 6%. */
+	height: 10%; /* Ustala wysokość przycisku na 10%. */
+	padding: 0.5%; /* Dodaje wewnętrzny odstęp do treści przycisku o szerokości 0.5%. */
+	font-size: 18px; /* Ustala rozmiar czcionki na 18 pikseli. */
+	border-radius: 10%; /* Zaokrągla rogi przycisku na 10%. */
+	box-shadow: none; /* Wyłącza efekt cienia dla przycisku. */
+	margin-left: 1%; /* Dodaje odstęp z lewej strony przycisku o szerokości 1%. */
+}

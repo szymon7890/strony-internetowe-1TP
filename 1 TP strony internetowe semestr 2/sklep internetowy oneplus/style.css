@@ -1,0 +1,220 @@
+/* Ogólna definicja dla kontenerów o klasie "container" */
+.container {
+    width: 960px; /* Ustala szerokość na 960 pikseli */
+    margin: 0 auto; /* Centralizuje elementy w poziomie */
+}
+
+/* Zwiększenie rozmiaru czcionki dla nagłówka h1 */
+h1 {
+    font-size: 36px;
+}
+
+/* Styl dla nawigacji */
+nav {
+    background-color: #2B2B2B; /* Ustala kolor tła nawigacji */
+}
+
+/* Styl dla kontenera nawigacji i stopki */
+nav .container, footer .container {
+    display: flex; /* Ustala kontenery jako "flex" */
+    justify-content: space-between; /* Wyśrodkowuje elementy w poziomie */
+    align-items: center; /* Wyśrodkowuje elementy w pionie */
+    height: 70px; /* Ustala wysokość na 70 pikseli */
+}
+
+/* Styl dla linków w nawigacji */
+nav a {
+    color: white; /* Ustala kolor tekstu na biały */
+    text-decoration: none; /* Usuwa podkreślenie tekstowe */
+}
+
+/* Styl dla logo nawigacji */
+.nav-logo {
+    font-weight: 600; /* Ustala grubość czcionki na 600 (pogrubienie) */
+}
+
+/* Efekt przejścia (transition) dla linków w nawigacji */
+.nav-links a {
+    transition: .5s all; /* Dodaje efekt przejścia z czasem trwania 0,5 sekundy na wszystkie właściwości */
+}
+
+/* Efekt "hover" dla linków w nawigacji */
+.nav-links a:hover {
+    transform: scale(1.1); /* Powiększa link o 10% po najechaniu myszką */
+}
+
+/* Dodanie marginesu po prawej stronie dla linków w nawigacji */
+.nav-links a {
+    margin-right: 30px;
+}
+
+/* Dla ostatniego linku w nawigacji zmniejszenie marginesu po prawej stronie */
+.nav-links a:last-of-type {
+    margin-right: 10px;
+}
+
+/* Styl tła strony głównej */
+.landing-page {
+    width: 100vw; /* Ustala szerokość na 100% szerokości widoku */
+    height: calc(100vh - 70px); /* Ustala wysokość na widok minus wysokość nawigacji */
+    background-image: url('Zrzut ekranu 2021-03-23 140205.PNG'); /* Ustawia tło jako obrazek */
+    background-position: center; /* Ustala pozycję tła na środku */
+    background-size: cover; /* Dopasowuje tło, aby pokrywało całą powierzchnię */
+}
+
+/* Styl cienia nad tłem strony głównej */
+.landing-page-shadow {
+    width: 100%; /* Ustala szerokość na 100% */
+    height: 100%; /* Ustala wysokość na 100% */
+    background-color: rgba(0, 0, 0, 0.3); /* Ustala kolor tła z przezroczystością */
+}
+
+/* Styl kontenera w cieniu nad tłem strony głównej */
+.landing-page-shadow .container {
+    display: flex; /* Ustala kontener jako "flex" */
+    align-items: center; /* Wyśrodkowuje elementy w pionie */
+    height: 100%; /* Ustala wysokość na 100% */
+}
+
+/* Styl tekstu na stronie głównej */
+.landing-page-text {
+    display: flex; /* Ustala tekst jako "flex" */
+    flex-direction: column; /* Ustawia układ kolumnowy */
+    align-items: flex-start; /* Wyśrodkowuje elementy w pionie */
+    justify-content: space-evenly; /* Rozkłada elementy równomiernie w pionie */
+    height: 25%; /* Ustala wysokość na 25% */
+    color: black; /* Ustala kolor tekstu na czarny */
+}
+
+/* Styl nagłówka h2 na stronie głównej */
+.landing-page-text h2 {
+    font-size: 24px; /* Ustala rozmiar czcionki na 24 piksele */
+}
+
+/* Styl przycisku na stronie głównej */
+.landing-page-text button {
+    background: none; /* Usuwa tło przycisku */
+    padding: 5px 10px; /* Ustala wewnętrzny odstęp */
+    border: 3px solid white; /* Ustala obramowanie */
+    border-radius: 14px; /* Zaokrągla narożniki */
+    color: black; /* Ustala kolor tekstu na czarny */
+    font-size: 16px; /* Ustala rozmiar czcionki na 16 pikseli */
+    transition: 1s all; /* Dodaje efekt przejścia z czasem trwania 1 sekundy na wszystkie właściwości */
+    cursor: pointer; /* Zmienia kursor myszy na wskaźnik */
+}
+
+/* Efekt "hover" dla przycisku na stronie głównej */
+.landing-page-text button:hover {
+    background-color: white; /* Zmienia kolor tła na biały */
+    color: black; /* Zmienia kolor tekstu na czarny */
+}
+
+/* Styl sekcji oferty produktów */
+.offer {
+    padding: 5% 0; /* Ustala wewnętrzny odstęp z góry i dołu na 5% */
+    background-color: black; /* Ustala kolor tła na czarny */
+    color: white; /* Ustala kolor tekstu na biały */
+}
+
+/* Styl nagłówka h1 w sekcji oferty produktów */
+.offer h1 {
+    margin-bottom: 50px; /* Dodaje margines dolny na 50 pikseli */
+}
+
+/* Styl nagłówka h2 w sekcji oferty produktów */
+.offer h2 {
+    margin-bottom: 10px; /* Dodaje margines dolny na 10 pikseli */
+    font-weight: bold; /* Ustala grubość czcionki na pogrubienie */
+    font-size: 16px; /* Ustala rozmiar czcionki na 16 pikseli */
+}
+
+/* Styl nagłówka h3 w sekcji oferty produktów */
+.offer h3 {
+    font: 12px; /* Ustala rozmiar czcionki na 12 pikseli */
+}
+
+/* Styl listy produktów w sekcji oferty */
+.offer-list {
+    display: flex; /* Ustala listę jako "flex" */
+    flex-wrap: wrap; /* Ustala zawijanie elementów w wiersze */
+}
+
+/* Styl kontenera pojedynczego produktu w sekcji oferty */
+.offer-box {
+    display: flex; /* Ustala kontener jako "flex" */
+    justify-content: center; /* Wyśrodkowuje elementy w poziomie */
+    align-items: center; /* Wyśrodkowuje elementy w pionie */
+    flex-direction: column; /* Ustala układ kolumnowy */
+    width: 30%; /* Ustala szerokość na 30% */
+    height: 200px; /* Ustala wysokość na 200 pikseli */
+    margin-right: 5%; /* Dodaje margines po prawej stronie */
+    margin-bottom: 5%; /* Dodaje margines na dole */
+    background-color: #7b668d; /* Ustala kolor tła */
+}
+
+/* Styl co trzeciego kontenera w sekcji oferty */
+.offer-box:nth-of-type(3n) {
+    margin-right: 0; /* Usuwa margines po prawej stronie */
+}
+
+/* Styl stopki strony */
+footer {
+    background-color: white; /* Ustala kolor tła stopki na biały */
+    text-align: center; /* Wyśrodkowuje tekst */
+}
+
+/* Styl linków w stopce */
+footer a {
+    color: black; /* Ustala kolor tekstu na czarny */
+    text-decoration: none; /* Usuwa podkreślenie tekstowe */
+}
+
+/* Styl kontenera dla danych kontaktowych w stopce */
+.footer-contact {
+    display: flex; /* Ustala kontener jako "flex" */
+    flex-direction: column; /* Ustala układ kolumnowy */
+}
+
+/* Styl obrazków */
+.images {
+    width: 120px; /* Ustala szerokość na 120 pikseli */
+    height: 150px; /* Ustala wysokość na 150 pikseli */
+}
+
+/* Styl nagłówka h1 z id "header" */
+#header {
+    text-align: center; /* Wyśrodkowuje tekst */
+    color: #DCDCDC; /* Ustala kolor tekstu na jasnoszary */
+    font-size: 32px; /* Ustala rozmiar czcionki na 32 piksele */
+}
+
+/* ustawienie zdjęcia */
+#header-img {
+	width: 200px;	/*szerokość*/
+	height: 50px;	/*wysokość*/
+}
+
+/* Styl obrazka z id "Homepage1" */
+#Homepage1 {
+    width: 100%; /* Ustala szerokość na 100% */
+    height: 100%; /* Ustala wysokość na 100% */
+    position: relative; /* Ustala pozycję jako "relative" */
+}
+
+/* Styl paragrafu z id "offer-paragraph" */
+#offer-paragraph {
+    position: absolute; /* Ustala pozycję jako "absolute" */
+    top: 1200px; /* Ustala odległość od góry na 1200 pikseli */
+    left: 500px; /* Ustala odległość od lewej strony na 500 pikseli */
+    color: white; /* Ustala kolor tekstu na biały */
+    font-size: 20px; /* Ustala rozmiar czcionki na 20 pikseli */
+}
+
+/* Styl paragrafu z id "offer-marketing" */
+#offer-marketing {
+    position: absolute; /* Ustala pozycję jako "absolute" */
+    top: 1165px; /* Ustala odległość od góry na 1165 pikseli */
+    left: 500px; /* Ustala odległość od lewej strony na 500 pikseli */
+    color: white; /* Ustala kolor tekstu na biały */
+    font-size: 25px; /* Ustala rozmiar czcionki na 25 pikseli */
+}
