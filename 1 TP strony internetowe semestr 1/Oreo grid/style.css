@@ -1,0 +1,122 @@
+body {
+	font-family: "arial";
+	background-color: gray;
+	margin: 0;
+}
+/* Ustawienie czcionki na "Arial" i koloru tła na szary. Obramowanie odstępu strony (margin) na 0. */
+
+#container {
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"article nav nav"
+		"footer footer footer"
+	;
+	grid-template-rows: 1fr 5fr 1fr;
+	grid-template-columns: 2fr 7fr 1fr;
+	height: 100vh;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+	background-color: white;
+}
+/* Stylizacja kontenera o identyfikatorze "container". Używa układu siatki (grid) do rozmieszczenia elementów. Określa obszary nagłówka, artykułu, nawigacji i stopki. */
+
+#container header {
+	background-color: #35326B;
+	grid-area: header;
+}
+/* Stylizacja nagłówka wewnątrz kontenera. Ustawia kolor tła na ciemnoniebieski. */
+
+#navMessage {
+	text-align: center;
+	font-size: 36px;
+	color: white;
+}
+/* Stylizacja elementu o identyfikatorze "navMessage" wewnątrz nagłówka. Ustawia tekst na środku, rozmiar czcionki na 36px i kolor na biały. */
+
+#container article {
+	background-color: #dddddd;
+	grid-area: article;
+}
+/* Stylizacja artykułu wewnątrz kontenera. Ustawia kolor tła na jasnoszary. */
+
+#articleNaviagtionPage {
+	text-align: center;
+	font-weight: bold;
+	padding-left: 50%;
+}
+/* Stylizacja elementu o identyfikatorze "articleNaviagtionPage" wewnątrz artykułu. Ustawia tekst na środku, pogrubia czcionkę i dodaje wcięcie z lewej strony. */
+
+#leftContainer {
+	background-color: #dddddd;
+	width: 30%;
+	padding-bottom: 300px;
+	float: left;
+}
+/* Stylizacja lewego kontenera. Ustawia kolor tła na jasnoszary, szerokość na 30% i dolny odstęp na 300px. */
+
+#container nav {
+	background-color: white;
+	grid-area: nav;
+}
+/* Stylizacja nawigacji wewnątrz kontenera. Ustawia kolor tła na biały. */
+
+h5 {
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+	padding-left: 10px;
+	text-align: center;
+}
+/* Stylizacja nagłówków typu h5. Usuwa marginesy i wcięcia, ustawia górny odstęp, lewe wcięcie i tekst na środku. */
+
+#headerForRightContaier {
+	text-align: center;
+	font-weight: bold;
+}
+/* Stylizacja elementu o identyfikatorze "headerForRightContaier". Ustawia tekst na środku i pogrubia czcionkę. */
+
+#oreo {
+	width: 30%;
+	height: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Stylizacja obrazka o identyfikatorze "oreo". Ustawia szerokość i wysokość, wyświetla go jako blok i wyśrodkowuje zarówno w poziomie, jak i w pionie. */
+
+#header {
+	text-align: center;
+}
+/* Stylizacja elementu o identyfikatorze "header". Ustawia tekst na środku. */
+
+#list {
+	text-align: center;
+}
+/* Stylizacja listy o identyfikatorze "list". Ustawia tekst na środku. */
+
+.spanInLi {
+	padding-left: 270px;
+}
+/* Stylizacja elementów klasy "spanInLi" wewnątrz listy. Dodaje wcięcie z lewej strony. */
+
+#container aside {
+	background-color: pink;
+	grid-area: aside;
+}
+/* Stylizacja bocznego kontenera wewnątrz kontenera głównego. Ustawia kolor tła na różowy. */
+
+#container footer {
+	background-color: #35326B;
+	grid-area: footer;
+}
+/* Stylizacja stopki wewnątrz kontenera głównego. Ustawia kolor tła na ciemnoniebieski. */
+
+#footerMessage {
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+/* Stylizacja elementu o identyfikatorze "footerMessage" w stopce. Ustawia tekst na środku, rozmiar czcionki na 24px i kolor na biały. */

@@ -1,0 +1,105 @@
+/* Resetowanie marginesu dla wszystkich elementów */
+* {
+    margin: 0px;
+}
+
+/* Resetowanie marginesu dla ciała strony */
+body {
+    margin: 0px;
+}
+
+/* Układ strony oparty na Grid Layout */
+#container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav article aside"
+        "footer footer footer";
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 7fr 1fr;
+    height: 100vh;
+}
+
+/* Styl nagłówka */
+#container header {
+    grid-area: header;
+}
+
+/* Styl kontenera nagłówka, przesunięcie elementów na prawo */
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styl sekcji nagłówka z przyciskami */
+#buttonsHeader {
+    float: right; /* Przesunięcie na prawo */
+    padding-right: 3%; /* Dodatkowy odstęp z prawej strony */
+    padding-top: 2%; /* Dodatkowy odstęp z góry */
+}
+
+/* Styl linków, odstęp między nimi i odstęp z prawej strony */
+.links {
+    margin-bottom: 10px; /* Ustaw odstęp między linkami */
+    margin-right: 20px; /* Odstęp z prawej strony */
+    text-decoration: none;
+}
+
+/* Styl sekcji artykułu */
+#container article {
+    grid-area: article;
+}
+
+/* Styl logo Google, centrowanie na stronie */
+#logoGoogle {
+    width: 25%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styl paska wyszukiwania, centrowanie na stronie i dodatkowe style */
+#searchBar {
+    display: block;
+    margin: 0 auto; /* Centrowanie na stronie */
+    width: 40%;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+}
+
+/* Styl paska wyszukiwania w stanie "focus" (po kliknięciu) */
+#searchBar:focus {
+    outline: none;
+    border: 1px solid #4585f5;
+    background-color: #fff;
+}
+
+/* Styl kontenera przycisków, centrowanie tekstu */
+#buttonContainer {
+    text-align: center;
+}
+
+/* Styl przycisków, odstępy między nimi */
+.buttons {
+    margin: 0 5px; /* Odstępy między przyciskami */
+}
+
+/* Styl sekcji nawigacyjnej */
+#container nav {
+    grid-area: nav;
+}
+
+/* Styl sekcji bocznej (aside) */
+#container aside {
+    grid-area: aside;
+}
+
+/* Styl stopki strony */
+#container footer {
+    grid-area: footer;
+}

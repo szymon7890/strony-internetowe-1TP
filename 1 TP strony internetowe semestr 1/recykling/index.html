@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>homework site</title>
+		<!-- Tytuł strony, który będzie widoczny w pasku przeglądarki. -->
+		<link rel="stylesheet" href="style.css">
+		<!-- Importuje arkusz stylów CSS z pliku "style.css" w celu dostosowania wyglądu strony. -->
+		<meta name="author" content="Szymon Kalinowski 14.10.2020">
+		<!-- Autor stworzenia strony internetowej-->
+	</head>
+	<body>
+		<div id="container">
+			<!-- Główny kontener strony. -->
+			<header>
+				<!-- Nagłówek strony. -->
+				<p id="navMessage">Logo</p>
+				<!-- Tekst "Logo" w nagłówku. -->
+			</header>
+			<article>
+				<!-- Główny obszar artykułu na stronie. -->
+				<div id="leftContainer">
+					<!-- Lewy kontener wewnątrz artykułu. -->
+					<p id="articleNaviagtionPage">Nawigation page:</p>
+					<!-- Nagłówek "Nawigation page:". -->
+					<ol>
+						<!-- Lista uporządkowana (numerowana). -->
+						<li><a href="/">Page1</a></li>
+						<!-- Pozycja 1 z linkiem "Page1". -->
+						<li><a href="/">Page2</a></li>
+						<!-- Pozycja 2 z linkiem "Page2". -->
+						<li><a href="/">Page3</a></li>
+						<!-- Pozycja 3 z linkiem "Page3". -->
+						<li><a href="/">Page4</a></li>
+						<!-- Pozycja 4 z linkiem "Page4". -->
+						<li><a href="/">Page5</a></li>
+						<!-- Pozycja 5 z linkiem "Page5". -->
+						<li><a href="/">Page6</a></li>
+					</ol>
+				</div>
+			</article>
+			<nav>
+				<!-- Nawigacja strony. -->
+				<p id="headerForRightContaier">Content</p>
+				<!-- Nagłówek "Content". -->
+				<img id="ziola" src="ziola.png"/>
+				<!-- Obrazek z identyfikatorem "oreo" i źródłem "ziola.png". -->
+				<h4 id="header">Strona testowa pełniąca formę formularza</h4>
+				<!-- Nagłówek artykułu. -->
+
+				<div id="websiteTest">
+					<ul id="list">
+						<form action="index.php" method="POST">
+							<li><span class="spanInLi">Podaj imię</span><input type="text" name="name" id="name" required><br></li>
+							<li><span class="spanInLi">Podaj liczbę</span><input type="number" name "number" id="number" required><br></li>
+							<li><span class="spanInLi">Podaj hasło</span><input type="password" name="password1" id="password1" required><br></li>
+							<li><span class="spanInLi">Potwierdź hasło</span><input type="password" name="password2" id="password2" required><br></li>
+							<button type="submit" id="submit">prześlij</button>
+						</form>
+					</ul>
+				</div>
+			</nav>
+			<aside></aside>
+			<!-- Boczna kolumna - zwykle służy do zawartości dodatkowej. -->
+			<footer>
+				<!-- Stopka strony. -->
+				<p id="footerMessage">Footer</p>
+				<!-- Tekst "Footer" w stopce. -->
+			</footer>
+		</div>
+	</body>
+</html>

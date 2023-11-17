@@ -1,0 +1,130 @@
+body {
+	font-family: "arial";
+	background-color: #99e899;
+	margin: 0;
+}
+/* Ustawienia ogólne dla całej strony, takie jak czcionka i kolor tła. */
+
+#container {
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"article nav nav"
+		"footer footer footer"
+	;
+	grid-template-rows: 1fr 5fr 1fr;
+	grid-template-columns: 2fr 7fr 1fr;
+	height: 100vh;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+	background-color: white;
+}
+/* Stylizacja głównego kontenera strony z użyciem układu siatki (grid). Określa obszary dla nagłówka, artykułu, nawigacji i stopki. */
+
+#container header {
+	background-color: green;
+	grid-area: header;
+}
+/* Stylizacja nagłówka wewnątrz kontenera, zmienia kolor tła na zielony. */
+
+#navMessage {
+	text-align: center;
+	font-size: 36px;
+	color: white;
+}
+/* Stylizacja elementu z identyfikatorem "navMessage" wewnątrz nagłówka. Tekst na środku, większa czcionka i biały kolor. */
+
+#container article {
+	background-color: #99e899;
+	grid-area: article;
+}
+/* Stylizacja obszaru artykułu wewnątrz kontenera, zmienia kolor tła na zielonkawy. */
+
+#articleNaviagtionPage {
+	text-align: center;
+	font-weight: bold;
+	padding-left: 50%;
+}
+/* Stylizacja elementu z identyfikatorem "articleNaviagtionPage" wewnątrz artykułu. Tekst na środku, pogrubiona czcionka i wcięcie z lewej. */
+
+#leftContainer {
+	width: 30%;
+	padding-bottom: 300px;
+	float: left;
+}
+/* Stylizacja lewego kontenera. Szerokość 30% i odstęp na dole. */
+
+#container nav {
+	background-color: white;
+	grid-area: nav;
+}
+/* Stylizacja nawigacji wewnątrz kontenera, zmienia kolor tła na biały. */
+
+h5 {
+	margin: 0;
+	padding: 0;
+	padding-top: 30px;
+	padding-left: 10px;
+	text-align: center;
+}
+/* Stylizacja nagłówków typu h5. Brak marginesów i wcięć, górny odstęp, lewe wcięcie i tekst na środku. */
+#headerForRightContaier {
+	text-align: center;
+	font-weight: bold;
+}
+/* Stylizacja elementu z identyfikatorem "headerForRightContaier". Tekst na środku i pogrubiona czcionka. */
+
+#ziola {
+	width: 30%;
+	height: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Stylizacja obrazka z identyfikatorem "ziola". Określa szerokość, wysokość, wyświetlanie jako blok i wyśrodkowanie w poziomie i pionie. */
+
+#header {
+	text-align: center;
+}
+/* Stylizacja elementu z identyfikatorem "header". Tekst na środku. */
+
+#websiteTest {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 25vh;
+	text-align: center;
+}
+/* Stylizacja elementu z identyfikatorem "websiteTest". Używa flexboxa do pozycjonowania elementów. Wyśrodkowuje zawartość w pionie i poziomie. */
+
+#list {
+	padding: 0;
+}
+/* Stylizacja listy o identyfikatorze "list". Usuwa domyślny padding. */
+
+#submit {
+	margin-top: 20px;
+}
+/* Stylizacja elementu z identyfikatorem "submit". Dodaje odstęp od góry. */
+
+#container aside {
+	background-color: pink;
+	grid-area: aside;
+}
+/* Stylizacja bocznego kontenera wewnątrz głównego kontenera. Zmienia kolor tła na różowy. */
+
+#container footer {
+	background-color: green;
+	grid-area: footer;
+}
+/* Stylizacja stopki wewnątrz głównego kontenera. Zmienia kolor tła na zielony. */
+
+#footerMessage {
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+/* Stylizacja elementu z identyfikatorem "footerMessage" w stopce. Tekst na środku, większa czcionka i biały kolor. */
